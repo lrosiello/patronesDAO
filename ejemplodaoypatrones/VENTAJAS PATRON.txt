@@ -1,0 +1,43 @@
+Ventajas de Implementar el Patrón DAO
+Separación de Responsabilidades:
+
+Ventaja: El patrón DAO separa la lógica de acceso a datos de la lógica de negocio. Esto significa que el código que maneja la base de datos está desacoplado del código de la aplicación que utiliza esos datos, facilitando la comprensión y el mantenimiento del código.
+Impacto: La separación ayuda a mantener el código organizado y más fácil de mantener y probar.
+Facilita el Mantenimiento y Escalabilidad:
+
+Ventaja: Cambios en la forma en que se accede a la base de datos (como cambiar de un motor de base de datos a otro) se pueden hacer en la capa DAO sin afectar a la lógica de negocio.
+Impacto: Reduce el impacto de los cambios en la base de datos y permite una mayor flexibilidad al actualizar o cambiar el sistema de almacenamiento.
+Reusabilidad:
+
+Ventaja: Las clases DAO encapsulan las operaciones de acceso a datos y pueden ser reutilizadas en diferentes partes de la aplicación o incluso en diferentes aplicaciones.
+Impacto: Fomenta la reutilización del código y la coherencia en las operaciones de acceso a datos.
+Mejora la Seguridad:
+
+Ventaja: El patrón DAO puede ayudar a evitar vulnerabilidades de seguridad al centralizar el acceso a datos y aplicar políticas de validación y sanitización de datos en un solo lugar.
+Impacto: Mejora la seguridad general del acceso a datos al reducir el riesgo de inyecciones SQL y otros ataques relacionados.
+Facilita el Testing:
+
+Ventaja: La capa DAO se puede probar de forma aislada usando técnicas de pruebas unitarias, lo que permite verificar que el acceso a datos funciona correctamente sin necesidad de una base de datos real.
+Impacto: Facilita la escritura de pruebas y asegura que las operaciones de acceso a datos se comporten como se espera.
+Consistencia:
+
+Ventaja: Permite definir y aplicar consistentemente las operaciones de acceso a datos, como CRUD (Crear, Leer, Actualizar, Eliminar), en un solo lugar.
+Impacto: Asegura que las operaciones sean consistentes y predecibles a lo largo de la aplicación.
+Posibles Desventajas
+Complejidad Adicional:
+
+Desventaja: Introduce una capa adicional de abstracción que puede hacer que el diseño sea más complejo, especialmente si el proyecto es pequeño.
+Impacto: Puede ser excesivo para aplicaciones simples donde el acceso a datos no es complejo.
+Sobrecarga de Código:
+
+Desventaja: Puede resultar en más código para manejar las operaciones de acceso a datos, lo que puede ser visto como una sobrecarga en términos de desarrollo y mantenimiento.
+Impacto: Puede aumentar el esfuerzo requerido para desarrollar y mantener el código.
+Rendimiento:
+
+Desventaja: En algunos casos, la capa adicional de abstracción puede afectar el rendimiento, aunque en la mayoría de los casos esto no es significativo.
+Impacto: Es importante evaluar el impacto en el rendimiento en aplicaciones de alto rendimiento.
+Configuración Inicial:
+
+Desventaja: La configuración inicial para establecer las clases DAO y las interfaces puede requerir un esfuerzo adicional al comienzo del proyecto.
+Impacto: Requiere tiempo y planificación para implementar adecuadamente el patrón DAO.
+En resumen, el patrón DAO ofrece beneficios significativos en términos de separación de responsabilidades, mantenimiento, y pruebas, pero también puede introducir una mayor complejidad y una sobrecarga de código en aplicaciones más pequeñas. La elección de usar DAO debe basarse en la complejidad del proyecto y las necesidades específicas de la aplicación.
